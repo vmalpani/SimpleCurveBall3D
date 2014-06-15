@@ -1,0 +1,88 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Ampersund/Dropbox/Graphics Dump/pa1/dump_final/helloWorld/src/GLScreenCapturer.h
+stdint.h
+-
+OpenGL/gl.h
+-
+GL/glut.h
+-
+
+/Users/Ampersund/Dropbox/Graphics Dump/pa1/dump_final/helloWorld/src/draw_all.h
+GLUT/glut.h
+-
+GL/glut.h
+-
+stdlib.h
+-
+stdio.h
+-
+iostream
+-
+sstream
+-
+cmath
+-
+cstring
+-
+cstdlib
+-
+ctime
+-
+
+/Users/Ampersund/Dropbox/Graphics Dump/pa1/dump_final/helloWorld/src/helper.h
+GLUT/glut.h
+-
+GL/glut.h
+-
+stdlib.h
+-
+stdio.h
+-
+iostream
+-
+sstream
+-
+cmath
+-
+cstring
+-
+cstdlib
+-
+ctime
+-
+
+/Users/Ampersund/Dropbox/Graphics Dump/pa1/dump_final/helloWorld/src/main.cpp
+GLUT/glut.h
+-
+GL/glut.h
+-
+stdlib.h
+-
+stdio.h
+-
+iostream
+-
+sstream
+-
+cmath
+-
+cstring
+-
+cstdlib
+-
+ctime
+-
+helper.h
+/Users/Ampersund/Dropbox/Graphics Dump/pa1/dump_final/helloWorld/src/helper.h
+draw_all.h
+/Users/Ampersund/Dropbox/Graphics Dump/pa1/dump_final/helloWorld/src/draw_all.h
+GLScreenCapturer.h
+/Users/Ampersund/Dropbox/Graphics Dump/pa1/dump_final/helloWorld/src/GLScreenCapturer.h
+

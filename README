@@ -1,0 +1,87 @@
+%{ 
+    Author : Vaibhav Malpani
+    Pic Breaker
+%}
+
+To get started, please read the ``Quick Start'' section first.
+For running the code samples, please check the ``Usage'' section.
+
+Table of Contents
+=================
+
+- Quick Start
+- Installation
+- Usage
+- References
+
+Quick Start
+===========
+
+See the section ''Installation'' to quickly compile and run the code.
+
+You should have two folders with the following structure:
+1. src
+		- main.cpp
+		- GLScreenCapturer.cpp
+		- GLScreenCapturer.h
+		- helper.h
+		- draw_all.h
+		- CMakeLists.txt
+		- kat.bmp
+		- brickwall.bmp
+		- utils
+			- macros.h
+
+2. build
+		(empty before running cmake)
+
+We worked with the following configuration to develop the game:
+1. MAC OS X 10.9
+2. Xcode 5.0.2 (5A3005)
+3. OpenGL 2.1
+
+Installation
+============
+The codebase depends on OpenGL library and GLUT. On Ubuntu Linux, you can install them by
+sudo apt-get install libglu1-mesa-dev freeglut3-dev
+
+1. cd build
+Build folder should be empty right now
+2. cmake ../src
+Generates make file and other CMake metadata in build directory using CMakeLists.txt
+3. make
+Builds the project. If successful, it should generate an executable.
+4. ./helloWorld
+Run the executable to play Pic Breaker!
+
+If you have any trouble, please drop an email to vom2102@columbia.edu
+
+Usage
+=====
+Keys:
+1. Paddle Movement
+	Up Arrow, Down Arrow - Vertical movement 
+	Left Arrow, Right Arrow - Horizontal movement
+2. New Game - Space Bar
+	Randomly spawns the sphere.
+3. Exit game - Esc
+4. F1 - Full/Normal screen toggling. Mouse click get disabled in full screen mode.
+
+Mouse Clicks:
+1. Play
+	Analogous to spacebar. Starts a new game and randomly spawns the sphere.
+2. Reveal
+	Opens up all the tiles to depict the hidden image. Click again to hide the image.
+3. Quit
+	Analogous to Esc key. Stops the execution and exits the game.
+
+Score is updated each time the sphere is correctly reflected by the paddle.
+Game ends as soon as paddle misses the sphere.
+
+References
+==========
+1. Significant help was taken from 'NeHe Productions - Everything OpenGL' tutorials for texture mapping and text rendering.
+2. Text rendering assistance through www.opengl.org/discussion_boards
+3. Code samples from the book 'OpenGL - A Primer' by Edward Angel were constantly referred for understanding the OpenGL pipeline.
+4. Code for loading images for texturing picked up from http://www.swiftless.com/tutorials/opengl
+5. Lighthouse3d tutorials were referred for lighting and shading.
